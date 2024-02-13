@@ -8,7 +8,7 @@
 
 //Function Prototypes
 
-void Press_Enter_to_Continue();
+void Press_Enter_to_Continue(); 
 void Hangman_Lobby();
 void Game_Difficulty();
 void Game_Logic(char chosenWord[]);
@@ -51,7 +51,7 @@ void Press_Enter_to_Continue()
 
 
 
-void drawHangman(int incorrectGuesses) {
+void drawHangman(int incorrectGuesses) { //This function was created by external sources, as making it manually would take a long time
     printf("    _______\n");
     printf("   |/      |\n");
     printf("   |      %c%c%c\n", (incorrectGuesses >= 1 ? '(' : ' '), (incorrectGuesses >= 1 ? '_' : ' '), (incorrectGuesses >= 1 ? ')' : ' '));
@@ -166,7 +166,7 @@ else
 
 
 //------------------------------------------------
-void Game_Difficulty()
+void Game_Difficulty() //For the sake of simplicity, the words are manually chosen
 {
     int difficultyLevel;
     char chosenWord[25];
